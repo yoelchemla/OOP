@@ -112,4 +112,4 @@ Open the EX2.jar and fill the following:
 
 Enter your ID (you can type other number).
 Enter the level [0-23].
-# Now you can enjoy the game.
+# Now you can enjoy from the game.
