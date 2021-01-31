@@ -1,0 +1,22 @@
+
+Author : Yoel Chemla
+This interface represents an undirectional weighted graph.
+  It should support a large number of 
+  nodes (over 10^6, with average degree of 10).
+  The implementation should be based on an 
+  efficient compact representation
+  (should NOT be based on a n*n matrix).
+ 
+     *****
+ 
+ The interface weighted_graph_algorithms represents an Undirected (positive) Weighted 
+ Graph Theory algorithms including:
+ * 0. clone(); (copy)
+ * 1. init(graph);
+ * 2. isConnected();
+ * 3. double shortestPathDist(int src, int dest);
+ * 4. List<node_data> shortestPath(int src, int dest);
+ * 5. Save(file);
+ * 6. Load(file);
+ 						* **the specific explain exists in the methods!!
+ 						
