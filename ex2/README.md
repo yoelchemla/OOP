@@ -4,23 +4,23 @@
 
 ## READEME - Pokemon Game :
 ### Authors: Yoel Chemla and Afik Peretz
-This assignment  based on previous assignments in an object-oriented programming course and on the realization of a directed and weighted graph.
-The assignment made up of two parts : 
+This assignment is based on previous assignments in an object-oriented programming course and on the implementation of a directed and weighted graph.
+The assignment is made up of two parts: 
 
-*Part 1* - Realization of a weighted and directed graph and algorithms which operate on the graph.
+*Part 1* - Implementation of a weighted & directed graph and algorithms which operate on the graph.
 
-*Part 2* - Build, design, interface in front of a server and solve the Pokemon game.
+*Part 2* - Frontend design of the game.
 
 # The implements : Part A - 
 
 
 -   *directed_weighted_graph*  (implemented by  *DWGraph_DS*) - an object which represents a directed weighted graph.
     
-    -   *node_data*  (implemented by  *NodeData*) - an object displays the vertices in the graph and the actions that are performed on them. The vertex receives a key, tag, and data.
-    -    *edge_data*  (implemented by  *EdgeData*) - an object displays the edges in the graph and the actions that are performed on them. Theedges receives a src, dest, and wieght.
--   *dw_graph_algorithms*  (implemented by  *DWGraph_Algo*) - an object that implements some basic graph algorithms with Dijkstra's and BFS algorithms.
+    -   *node_data*  (implemented by  *NodeData*) - An object that represents the vertices of the graph and the actions that are performed on them. The vertex receives a key, tag, and data.
+    -    *edge_data*  (implemented by  *EdgeData*) - An object that represents the edges of the graph and the actions that are performed on them. The edges receives a src, dest, and wheight.
+-   *dw_graph_algorithms*  (implemented by  *DWGraph_Algo*) - An object that implements some basic graph algorithms with Dijkstra's and BFS algorithms.
     
--   The main reasons that i chose HashMap is because i saw that we need to do things in O(1) and we neet to work whit Collections , for example methods - add ,size,values,remove,getV and more.
+- HashMap is used for its efficient complexity, for example the methods - add ,size,values,remove,getV (and more) that run on O(1).
    
     
 
@@ -62,12 +62,12 @@ In this class i implements the interfaces - directed_weighted_graph and  Seriali
 |--|--|
 | DWGraph_DS ()|  Constructor|
 | getNode(int key)| Returns a node with a key
-| hasEdge(int node1, int node2) |Check if is an edge between two nodes |
+| hasEdge(int node1, int node2) |Check if is an edge is between two nodes |
 | getEdge(int node1, int node2) |  Returns the weight of the edge|
 | addNode(int key) | Add node to the graph |
-|connect(int node1, int node2, double w) | Connect btween two nodes and init the wight of the edge |
-| getV()  |  Returns a Collection representing all the nodes in the graph|
-|  getV(int node_id)| Returns all the neibers of node id |
+|connect(int node1, int node2, double w) | Connect two nodes and init the weight of the edge |
+| getV()  |  Returns a Collection that represe all the nodes in the graph|
+|  getV(int node_id)| Returns all the neighbors of node id |
 | removeNode(int key)| Remove a node from the graph |
 | nodeSize()| Returns the number of nodes in the graph |
 | edgeSize()| Returns the number of edges in the graph |
@@ -76,7 +76,7 @@ In this class i implements the interfaces - directed_weighted_graph and  Seriali
 
 ### DWGraph_Algo
 
-In this class i implements the interfaces -  dw_graph_algorithms.
+Implementation of the interfaces -  dw_graph_algorithms.
 
 | Name |  Description|
 |--|--|
@@ -87,17 +87,15 @@ In this class i implements the interfaces -  dw_graph_algorithms.
 | isConnected()|  Checking connectivity of the graph|
 | shortestPathDist(int src, int dest)| Returns the sort distance between src to dest whit Dijkstra's algorithm |
 |shortestPath(int src, int dest)| Returns the way from src to dist whit Dijkstra's algorithm and whit a list |
-| save(String file)  | Saves a graph to a file whit Json|
+| save(String file)  | Saves a graph to a file whit Json |
 | load(String file) | Load a graph from a file whit Jason |
 
 
-- In this part there are also classes that represent location -GeoLocatio and working with the server - game_service.
-
 
 #  Part B - "The Pokemon Game".
- - In this part are the departments that implement the design (GUI, JPanel, JFarme).
-And the player side facing the server in this game.
-For the purpose of creating the GUI we implemented the myPanel and myFarme classes which represent and create a drawing of a graph, agent and Pokemon.
+-Implementation of the user interface. (GUI, JPanel, JFarme).
+ 
+-For the purpose of creating the GUI we implemented the myPanel and myFarme classes which represent and create a drawing of a graph, agent and Pokemon.
 
 ## option to tun the game:
 
@@ -112,4 +110,4 @@ Open the EX2.jar and fill the following:
 
 Enter your ID (you can type other number).
 Enter the level [0-23].
-# Now you can enjoy from the game.
+# Enjoy!
