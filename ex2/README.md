@@ -28,7 +28,7 @@ The assignment is made up of two parts:
 
 #  Methods
 ### DWGraph_DS
-In this class i implements the interfaces - directed_weighted_graph and  Serializable.
+This class implements the interfaces - directed_weighted_graph and  Serializable.
 
 *node_data*
 
