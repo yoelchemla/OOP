@@ -10,7 +10,7 @@ public class directedWeightedGraph implements directed_weighted_graph {
 
 	private HashMap <Integer, node_data> hashNodes;
 	private HashMap <String, edge_data> hashEdge;
-	private static int countMC;//???static
+	private static int countMC;
 
 	public directedWeightedGraph() {
 		hashNodes = new HashMap<>();
